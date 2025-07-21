@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pratiksha Alhat's Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Font Awesome CDN for icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#intro">Home</a></li>
+                <li><a href="#about">About Me</a></li> <!-- Added About Me link -->
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Introduction Section -->
+    <section id="intro" class="section">
+        <div class="intro-content">
+            <h1>Hi, I'm Pratiksha Alhat</h1>
+            <p>Welcome to my portfolio. I'm a passionate Computer Engineer!</p>
+            <a href="https://www.linkedin.com/in/pratiksha-alhat-305aaa265/" target="_blank" class="btn">Connect on LinkedIn</a>
+        </div>
+    </section>
+
+   <!-- About Me Section -->
+<section id="about" class="section">
+    <div class="about-container">
+        <h2>About Me</h2>
+        <p>I am a Computer Engineering student skilled in HTML, CSS, JavaScript, and C++. I excel at making clear and effective presentations and am always eager to keep learning and applying my skills to solve real-world problems in technology.</p>
+        <h3>My Internship Journey</h3>
+        <p>I have had the privilege of working with some amazing companies where I gained hands-on experience:</p>
+        <ul>
+            <li>
+                <strong>Intern at InternPE</strong> 
+                <a href="intership/Interpe.pdf" onclick="showCertificate('C++ Developer Intern', 'intership/Interpe.pdf')">- C++ Developer Intern</a>
+            </li>
+            <li>
+                <strong>Intern at CODTECH IT SOLUTIONS</strong> 
+                <a href="intership/codtech.pdf" onclick="showCertificate('Frontend Developer Intern', 'intership/Codtech.pdf')">- Frontend Developer Intern</a>
+            </li>
+            <li>
+                <strong>Intern at Codsoft</strong> 
+                <a href="intership/codsoft.pdf" onclick="showCertificate('JavaScript Developer', 'intership/Codsoft.pdf')">- JavaScript Developer</a>
+            </li>
+        </ul>
+    </div>
+</section>
+
+
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <div class="projects-container">
+            <h2>My Projects</h2>
+            <p>Here are some of the projects I’ve worked on. Check them out on GitHub!</p>
+            <div class="project-card">
+                <h3>E-Learning Platform UI</h3>
+                <p>A modern user interface for an e-learning platform, built using HTML, CSS, and JavaScript. Check out the project on GitHub.</p>
+                <a href="https://github.com/Pratu0405-a/E-LEARNING-PLATFORM-UI" target="_blank" class="btn">View on GitHub</a>
+            </div>
+            <div class="project-card">
+                <h3>Expense Tracker</h3>
+                <p>A website to help you track your expenses and manage your finances.</p>
+                <a href="https://github.com/Pratu0405-a/expense-tracker" target="_blank" class="btn">View on GitHub</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <h2>Skills</h2>
+        <p>Here's a look at my expertise in various technologies:</p>
+        <div class="skills-container">
+            <div class="skill-category">
+                <h3>Programming Languages</h3>
+                <ul>
+                    <li><i class="fas fa-code"></i> <a href="certificate\Cpp.jpg" onclick="showCertificate('C++')">C++</a></li>
+                    <li><i class="fas fa-code"></i> <a href="certificate\java.pdf" onclick="showCertificate('Java')">Java</a></li>
+                    <li><i class="fas fa-code"></i> <a href="certificate\python.pdf" onclick="showCertificate('Python')">Python</a></li>
+                </ul>
+            </div>
+        
+            <div class="skill-category">
+                <h3>Databases</h3>
+                <ul>
+                    <li><i class="fas fa-database"></i> <a href="certificate\sql.pdf" onclick="showCertificate('SQL')">SQL</a></li>
+                <li><i class="fas fa-database"></i> <a href="certificate\mongodb.pdf" onclick="showCertificate('MongoDB')">MongoDB</a></li>
+            </ul>
+        </div>
+                </ul>
+            </div>
+            <div class="skill-category">
+                <h3>Tools & Technologies</h3>
+                <ul>
+                    <li><i class="fas fa-table"></i> <a href="certificate\Power Bi.pdf" onclick="showCertificate('Power BI')">Power BI</a></li>
+                    <li><i class="fas fa-paint-brush"></i> <a href="certificate\javascript.pdf" onclick="showCertificate('HTML, CSS, JavaScript')">HTML, CSS, JavaScript</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="contact-container">
+            <h2>Contact Me</h2>
+            <p>I'd love to hear from you! Whether you're interested in collaborating or just want to chat, feel free to reach out!</p>
+            <div class="contact-details">
+                <div class="email-link">
+                    <p>You can also reach me at:</p>
+                    <a href="mailto:pratikshaalhat59@gmail.com" class="email-address">pratikshaalhat59@gmail.com</a>
+
+                </div>
+                <div class="social-links">
+                    <p>Or connect with me on:</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/pratiksha-alhat-305aaa265/" target="_blank" class="social-icon">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://github.com/Pratu0405-a" target="_blank" class="social-icon">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+                <a href="documents/Pratiksha alhat-2.pdf" class="btn" download>Download My Resume</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Pratiksha Alhat. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

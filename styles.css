@@ -1,0 +1,357 @@
+/* General Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color:#0f0f0f;
+    scroll-behavior: smooth; /* Added smooth scroll */
+}
+
+/* Header */
+header {
+    background: linear-gradient(135deg, #000000, #0f0f0f);
+    color: white;
+    padding: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    position: fixed; /* Fixed position */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Ensure it's on top of other content */
+    transition: background-color 0.3s ease; /* Smooth background color change */
+}
+
+header.scrolled {
+    background-color: #103038; /* Darker background when scrolled */
+}
+
+/* Navbar */
+header nav ul {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #f4f4f9;
+}
+
+/* Adjust content section's margin to prevent overlap with the fixed header */
+body {
+    margin-top: 100px; /* Adjust this value if needed */
+}
+
+/* Footer */
+footer {
+    background-color: #0f0f0f; /* Change this to your desired background color */
+    color: white; /* Ensures the text stands out on the dark background */
+    text-align: center;
+    padding: 20px;
+    font-size: 1rem;
+}
+
+
+
+
+
+/* Main Titles */
+h1, h2 {
+    text-align: center;
+    font-weight: bold;
+    color: #000000;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-top: 20px;
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin-top: 50px;
+}
+
+/* Intro Section */
+#intro {
+    background: linear-gradient(135deg, #727678, #0d1f28);
+    color: white;
+    padding: 80px 20px;
+    text-align: center;
+    border-bottom: 5px solid #0d1f28;
+}
+
+#intro h1 {
+    font-size: 3.5rem;
+}
+
+#intro .btn {
+    background-color: #000000;
+    color: white;
+    padding: 12px 30px;
+    text-decoration: none;
+    margin-top: 30px;
+    display: inline-block;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+#intro .btn:hover {
+    background-color:  #103038;
+}
+
+/* About Me Section */
+#about {
+    padding: 60px 20px;
+    background: linear-gradient(135deg,#0d1f28,#727678);
+}
+
+.about-container {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 40px;
+    background-color: #cecbcb;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.about-container:hover {
+    transform: translateY(-10px);
+}
+
+#about ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#about ul li {
+    font-size: 1.2rem;
+    color: #6b184d;
+    margin-bottom: 12px;
+}
+
+#about h3 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Projects Section */
+#projects {
+    padding: 60px 20px;
+    background: linear-gradient(135deg, #727678, #0d1f28);
+}
+
+.projects-container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.project-card {
+    background-color: #cecbcb;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+}
+
+.project-card h3 {
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.project-card p {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.project-card .btn {
+    background-color:#042f15;
+    color: #cecbcb;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.project-card .btn:hover {
+    background-color: #103038;
+}
+/* Skills Section */
+#skills {
+    padding: 60px 20px;
+    text-align: center;
+    background: linear-gradient(135deg, #0d1f28, #727678);
+}
+
+#skills p {
+    font-size: 1.2rem;
+    color: #000000;
+    margin-bottom: 30px;
+}
+
+/* Skill Containers */
+.skills-container {
+    display: flex;
+    justify-content: center; /* Centers the items horizontally */
+    flex-wrap: wrap; /* Allows wrapping to the next row if needed */
+    gap: 30px; /* Space between the boxes */
+    padding-bottom: 20px; /* Ensures scrolling space at the bottom */
+    max-width: 100%; /* Ensures it fits within the container */
+}
+
+.skill-category {
+    background-color: #cecbcb;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    width: 250px; /* You can adjust the width if needed */
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+    flex-shrink: 0; /* Prevent shrinking */
+    margin: 0 auto; /* Centers the individual boxes */
+}
+
+.skill-category:hover {
+    transform: translateY(-10px);
+}
+
+.skill-category h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.skill-category ul {
+    list-style: none;
+    padding: 0;
+}
+
+.skill-category ul li {
+    font-size: 1.2rem;
+    color: #555;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.skill-category ul li i {
+    color: #0a30c8;
+    font-size: 1.5rem;
+}
+
+/* Contact Section */
+#contact {
+    background: linear-gradient(135deg, #727678, #0d1f28);
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.contact-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 50px;
+    background-color: #cecbcb;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+#contact h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#contact p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 40px;
+}
+
+
+
+/* Email Link */
+.email-link {
+    margin-top: 30px;
+}
+
+.email-address {
+    font-size: 1.3rem;
+    color: #011b41;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.email-address:hover {
+    color: #103038;
+}
+
+/* Social Links */
+.social-links {
+    margin-top: 40px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.social-icons a {
+    font-size: 2rem;
+    color: #555;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color:  #103038;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .contact-container {
+        padding: 20px;
+    }
+
+    .social-icons a {
+        font-size: 1.6rem;
+    }
+
+    button[type="submit"] {
+        width: 100%;
+    }
+
+    .skills-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
